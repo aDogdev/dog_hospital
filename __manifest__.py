@@ -15,4 +15,5 @@
     "auto_install": False,
     "application": True,
     "installable": True,
+    "sequence": -100,
 }
