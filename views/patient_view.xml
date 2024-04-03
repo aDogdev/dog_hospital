@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+  <record id="hospital_patient_view_form" model="ir.ui.view">
+    <field name="name">hospital.patient.view.form</field>
+    <field name="model">hospital.patient</field>
+    <field name="arch" type="xml">
+      <form string="Patient">
+        <sheet>
+          <grouo>
+            <label for="name">Label</label>
+            <h1>
+              <field name="name" />
+            </h1>
+          </grouo>
+          <group>
+            <group>
+              <field name="gender" />
+            </group>
+            <group>
+              <field name="age" />
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
   <record id="hospital_patient_action" model="ir.actions.act_window">
     <field name="name">Patients</field>
     <field name="res_model">hospital.patient</field>
@@ -12,5 +37,8 @@
       </p>
     </field>
   </record>
+
+  <menuitem id="patient_menu" name="Patient" parent="patient_root_menu" sequence="0"
+    action="dog_hospital.hospital_patient_action" />
 
 </odoo>
