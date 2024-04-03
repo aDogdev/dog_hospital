@@ -10,7 +10,11 @@
     "depends": [
         "base",
     ],
-    "data": ["views/patient_view.xml", "views/menu.xml"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/patient_view.xml",
+        "views/menu.xml",
+    ],
     "demo": [],
     "auto_install": False,
     "application": True,
