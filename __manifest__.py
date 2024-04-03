@@ -10,7 +10,7 @@
     "depends": [
         "base",
     ],
-    "data": [],
+    "data": ["views/menu.xml"],
     "demo": [],
     "auto_install": False,
     "application": True,
