@@ -10,7 +10,7 @@
     "depends": [
         "base",
     ],
-    "data": ["views/menu.xml"],
+    "data": ["views/patient_view.xml", "views/menu.xml"],
     "demo": [],
     "auto_install": False,
     "application": True,
