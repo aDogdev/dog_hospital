@@ -44,6 +44,9 @@
     <field name="arch" type="xml">
       <search string="Patients">
         <field name="name" />
+        <field name="reference" />
+        <field name="gender" />
+        <field name="age" />
       </search>
     </field>
   </record>
