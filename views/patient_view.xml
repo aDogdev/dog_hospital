@@ -53,8 +53,9 @@
         <field name="age" />
 
         <filter name="filter_male" string="Male" domain="[('gender', '=', 'male')]" />
-        <separator />
         <filter name="filter_female" string="Female" domain="[('gender', '=', 'female')]" />
+        <separator />
+        <filter name="filter_Kids" string="Kids" domain="[('age', '&lt;=', 5)]" />
       </search>
     </field>
   </record>
