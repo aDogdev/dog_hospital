@@ -7,9 +7,7 @@
     "website": "",
     "license": "LGPL-3",
     "category": "Hospital",
-    "depends": [
-        "base",
-    ],
+    "depends": ["base", "mail"],
     "data": [
         "security/ir.model.access.csv",
         "views/menu.xml",
