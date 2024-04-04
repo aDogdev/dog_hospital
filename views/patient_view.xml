@@ -51,6 +51,10 @@
         <field name="ref" />
         <field name="gender" />
         <field name="age" />
+
+        <filter name="filter_male" string="Male" domain="[('gender', '=', 'male')]" />
+        <separator />
+        <filter name="filter_female" string="Female" domain="[('gender', '=', 'female')]" />
       </search>
     </field>
   </record>
