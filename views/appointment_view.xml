@@ -21,6 +21,7 @@
         <sheet>
           <group>
             <field name="patient_id" placeholder="Dwayne Johnson..." />
+            <field name="gender" />
             <field name="appointment_time" />
             <field name="booking_date" />
           </group>

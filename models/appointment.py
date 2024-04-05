@@ -8,6 +8,10 @@ class HospitalAppointment(models.Model):
     _description = "Hospital Appointment"
 
     patient_id = fields.Many2one("hospital.patient", string="Patient")
+    gender = fields.Selection(
+        string="Gender",
+        related="patient_id.gender",
+    )
     appointment_time = fields.Datetime(
         string="Appointment Time",
         default=lambda self: datetime.combine(
