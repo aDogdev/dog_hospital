@@ -9,6 +9,7 @@ class HospitalAppointment(models.Model):
     _description = "Hospital Appointment"
 
     patient_id = fields.Many2one("hospital.patient", string="Patient", tracking=True)
+    ref = fields.Char(string="Reference", related="patient_id.ref")
     gender = fields.Selection(
         string="Gender",
         related="patient_id.gender",
