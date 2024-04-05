@@ -32,6 +32,7 @@
               <field name="ref" placeholder="HP###..." />
             </group>
             <group>
+              <field name="birth_date" />
               <field name="age" />
               <field name="active" invisible="1" />
             </group>
