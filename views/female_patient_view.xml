@@ -16,7 +16,7 @@
 
   <menuitem
     id="female_patient_menu"
-    name="Female Patient"
+    name="Female Patients"
     action="hospital_female_patient_action"
     parent="dog_hospital.patient_root_menu"
     sequence="20" />

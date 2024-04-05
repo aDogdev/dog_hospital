@@ -88,7 +88,7 @@
     </field>
   </record>
 
-  <menuitem id="patient_menu" name="Patient" parent="patient_root_menu" sequence="0"
+  <menuitem id="patient_menu" name="Patients" parent="patient_root_menu" sequence="0"
     action="dog_hospital.hospital_patient_action" />
 
 </odoo>
