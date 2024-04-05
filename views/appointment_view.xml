@@ -52,7 +52,7 @@
     id="appointment_menu"
     name="Appointment"
     action="hospital_appointment_action"
-    parent="patient_root_menu"
+    parent="appointment_root_menu"
     sequence="10" />
 
 </odoo>

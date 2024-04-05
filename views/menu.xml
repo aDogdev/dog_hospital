@@ -5,5 +5,7 @@
     web_icon="dog_hospital,static/description/icon.png" sequence="0" />
   <menuitem id="patient_root_menu" name="Patient Details" parent="hospital_root_menu"
     sequence="0" />
+  <menuitem id="appointment_root_menu" name="Appointments" parent="hospital_root_menu"
+    sequence="0" />
 
 </odoo>
