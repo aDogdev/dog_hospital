@@ -22,6 +22,8 @@
           <group>
             <field name="patient_id" placeholder="Dwayne Johnson..." />
             <field name="gender" />
+          </group>
+          <group>
             <field name="appointment_time" />
             <field name="booking_date" />
           </group>
