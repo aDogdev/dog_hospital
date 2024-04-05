@@ -20,8 +20,13 @@
       <form string="Appointment">
         <sheet>
           <group>
-            <field name="patient_id" placeholder="Dwayne Johnson..." />
-            <field name="gender" />
+            <group>
+              <field name="patient_id" placeholder="Dwayne Johnson..." />
+              <field name="ref" />
+            </group>
+            <group>
+              <field name="gender" />
+            </group>
           </group>
           <group>
             <field name="appointment_time" />
