@@ -23,13 +23,13 @@
           <grouo>
             <label for="name">Label</label>
             <h1>
-              <field name="name" />
+              <field name="name" placeholder="Jhon Cena..." />
             </h1>
           </grouo>
           <group>
             <group>
               <field name="gender" />
-              <field name="ref" />
+              <field name="ref" placeholder="HP###..." />
             </group>
             <group>
               <field name="age" />
