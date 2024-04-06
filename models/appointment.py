@@ -44,3 +44,7 @@ class HospitalAppointment(models.Model):
         string="Status",
         tracking=True,
     )
+
+    def action_cancel(self):
+        for record in self:
+            record.state = "cancel"
