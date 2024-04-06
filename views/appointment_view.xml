@@ -10,6 +10,7 @@
         <field name="appointment_time" />
         <field name="booking_date" />
         <field name="priority" widget="priority" />
+        <field name="state" widget="badge" />
       </tree>
     </field>
   </record>
