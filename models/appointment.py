@@ -25,3 +25,4 @@ class HospitalAppointment(models.Model):
     booking_date = fields.Date(
         string="Booking Date", default=fields.Date.context_today, tracking=True
     )
+    prescription = fields.Html(string="Prescription")
