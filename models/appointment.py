@@ -27,7 +27,7 @@ class HospitalAppointment(models.Model):
     booking_date = fields.Date(
         string="Booking Date", default=fields.Date.context_today, tracking=True
     )
-    prescription = fields.Html(string="Prescription")
+    prescription = fields.Html(string="Prescription", tracking=True)
     priority = fields.Selection(
         [("0", "Normal"), ("1", "Low"), ("2", "High"), ("3", "Very High")],
         string="Priority",
