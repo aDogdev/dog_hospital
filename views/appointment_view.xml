@@ -68,8 +68,12 @@
     <field name="arch" type="xml">
       <search string="Appointments">
         <field name="patient_id" />
+        <field name="gender" />
+        <field name="ref" />
         <field name="appointment_time" />
         <field name="booking_date" />
+        <field name="priority" />
+        <field name="state" />
       </search>
     </field>
   </record>
