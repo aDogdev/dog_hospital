@@ -9,6 +9,7 @@
         <field name="patient_id" />
         <field name="appointment_time" />
         <field name="booking_date" />
+        <field name="priority" widget="priority" />
       </tree>
     </field>
   </record>
@@ -19,6 +20,13 @@
     <field name="arch" type="xml">
       <form string="Appointment">
         <sheet>
+          <div>
+            <h2>
+              <field name="priority"
+                widget="priority"
+              />
+            </h2>
+          </div>
           <group>
             <group>
               <field name="patient_id" placeholder="Dwayne Johnson..." />
@@ -36,8 +44,7 @@
             <page name="prescription" string="Prescription">
               <field name="prescription" placeholder="Enter your prescription" />
             </page>
-            <page name="pharmacy" string="Pharmacy">
-            </page>
+            <page name="pharmacy" string="Pharmacy" />
           </notebook>
         </sheet>
         <!-- Chatter -->
