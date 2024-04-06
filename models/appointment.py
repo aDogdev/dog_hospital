@@ -33,3 +33,14 @@ class HospitalAppointment(models.Model):
         string="Priority",
         tracking=True,
     )
+    state = fields.Selection(
+        [
+            ("draft", "Draft"),
+            ("in_consultation", "In Consultation"),
+            ("done", "Done"),
+            ("cancel", "Cancelled"),
+        ],
+        default="draft",
+        string="Status",
+        tracking=True,
+    )
