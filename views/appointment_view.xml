@@ -20,7 +20,8 @@
     <field name="arch" type="xml">
       <form string="Appointment">
         <header>
-          <button string="Cancel" name="action_cancel" type="object" class="oe_highlight" states="draft,in_consultation,done" />
+          <button string="Cancel" name="action_cancel" type="object" class="oe_highlight"
+            states="draft,in_consultation,done" />
           <field name="state" widget="statusbar" statusbar_visible="draft,in_consultation,done"
             options="{'clickable': True}"
           />
