@@ -22,7 +22,8 @@
       <form string="Appointment">
         <header>
           <button string="Cancel" name="action_cancel" type="object" class="oe_highlight"
-            states="draft,in_consultation,done" confirm="Are you sure to cancel this appointment?" />
+            states="draft,in_consultation,done" confirm="Are you sure to cancel this appointment?"
+            help="You will cancel this appointment." />
           <field name="state" widget="statusbar" statusbar_visible="draft,in_consultation,done"
             options="{'clickable': True}"
           />
@@ -31,7 +32,7 @@
           <div>
             <h2>
               <field name="priority"
-                widget="priority"
+                widget="priority" help="Set priority"
               />
             </h2>
           </div>
