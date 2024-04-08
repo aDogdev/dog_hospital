@@ -5,7 +5,8 @@
     <field name="name">hospital.appointment.view.tree</field>
     <field name="model">hospital.appointment</field>
     <field name="arch" type="xml">
-      <tree string="Appintments">
+      <tree string="Appintments" decoration-success="state=='done'" decoration-info="state=='draft'"
+        decoration-muted="state=='cancel'">
         <field name="patient_id" />
         <field name="appointment_time" />
         <field name="booking_date" />
