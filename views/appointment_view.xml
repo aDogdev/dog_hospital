@@ -10,6 +10,7 @@
         <field name="patient_id" />
         <field name="appointment_time" />
         <field name="booking_date" />
+        <field name="activity_ids" widget="list_activity" />
         <field name="priority" widget="priority" />
         <field name="state" widget="badge" decoration-success="state=='done'"
           decoration-info="state in ('draft')" decoration-danger="state=='cancel'"
