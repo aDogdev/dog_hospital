@@ -8,8 +8,10 @@
       <tree string="Appointments" decoration-success="state=='done'" decoration-info="state=='draft'"
         decoration-muted="state=='cancel'">
         <field name="patient_id" />
+        <field name="ref" optional="hide" />
+        <field name="gender" optional="hide" />
         <field name="appointment_time" />
-        <field name="booking_date" />
+        <field name="booking_date" optional="show" />
         <field name="activity_ids" widget="list_activity" />
         <field name="priority" widget="priority" />
         <field name="state" widget="badge" decoration-success="state=='done'"
