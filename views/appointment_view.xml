@@ -10,7 +10,9 @@
         <field name="appointment_time" />
         <field name="booking_date" />
         <field name="priority" widget="priority" />
-        <field name="state" widget="badge" />
+        <field name="state" widget="badge" decoration-success="state=='done'"
+          decoration-info="state in ('draft')" decoration-danger="state=='cancel'"
+          decoration-warning="state=='in_consultation'" />
       </tree>
     </field>
   </record>
