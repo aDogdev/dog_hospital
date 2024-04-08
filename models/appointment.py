@@ -52,3 +52,10 @@ class HospitalAppointment(models.Model):
     def action_cancel(self):
         for record in self:
             record.state = "cancel"
+        return {
+            "effect": {
+                "fadeout": "slow",
+                "message": "Cancel Successful",
+                "type": "rainbow_man",
+            }
+        }
