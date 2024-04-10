@@ -49,6 +49,7 @@ class HospitalAppointment(models.Model):
         tracking=True,
     )
 
+    # Test
     def action_cancel(self):
         for record in self:
             record.state = "cancel"
